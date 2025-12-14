@@ -45,7 +45,13 @@
             "Tưới nước đúng cách: Đủ ẩm nhưng thoát nước tốt, tránh úng",
             "Kiên nhẫn: Nông nghiệp hữu cơ cần thời gian để có kết quả tốt"
         ],
-        "fiveNos": "Không thuốc diệt cỏ; không thuốc trừ sâu; không chất bảo quản; không chất kích thích, tăng trưởng; không dư lượng hóa chất độc hại."
+        "fiveNos": [
+            "Không thuốc diệt cỏ",
+            "Không thuốc trừ sâu",
+            "Không chất bảo quản",
+            "Không chất kích thích tăng trưởng",
+            "Không dư lượng hóa chất độc hại"
+        ]
     },
     "ipm": {
         "title": "IPM - Quản lý sâu bệnh tổng hợp",
@@ -317,5 +323,82 @@
                 "Khử mùi hôi (chuồng, ao, bể phân)"
             ]
         }
-    ]
+    ],
+    "quickReference": {
+        "title": "Bảng tra cứu nhanh sâu bệnh",
+        "description": "Tra cứu nhanh các loại sâu bệnh phổ biến và cách xử lý",
+        "table": [
+            {
+                "pest": "Rầy mềm (Aphids)",
+                "icon": "🐛",
+                "signs": "Lá cuộn, nhăn, có chất dính",
+                "predator": "Bọ rùa 🐞",
+                "organicSolution": "Xịt tỏi ớt (100g/10l)",
+                "prevention": "Trồng hoa cúc vạn thọ"
+            },
+            {
+                "pest": "Sâu cuốn lá",
+                "icon": "🐛",
+                "signs": "Lá bị cuộn, có sâu bên trong",
+                "predator": "Ong ký sinh 🐝",
+                "organicSolution": "Phun Bt (15g/10l)",
+                "prevention": "Trồng hoa cải, húng quế"
+            },
+            {
+                "pest": "Nhện đỏ",
+                "icon": "🕷️",
+                "signs": "Đốm trắng, vàng trên lá",
+                "predator": "Bọ rùa, Rận đầu vàng 🦋",
+                "organicSolution": "Xịt nước mạnh + Neem oil",
+                "prevention": "Tưới đủ ẩm, tránh khô hạn"
+            },
+            {
+                "pest": "Thrip (Ruồi vàng)",
+                "icon": "🪰",
+                "signs": "Lá bạc màu, quả xù xì",
+                "predator": "Rận đầu vàng, Nhện 🕷️",
+                "organicSolution": "Bẫy dính màu xanh + Neem",
+                "prevention": "Vệ sinh vườn, dọn cỏ dại"
+            },
+            {
+                "pest": "Ốc sên",
+                "icon": "🐌",
+                "signs": "Lá bị ăn lỗ chỗ, có nhớt",
+                "predator": "Ếch nhái 🐸",
+                "organicSolution": "Bẫy bia, vỏ trứng nghiền",
+                "prevention": "Nuôi ếch, giảm độ ẩm"
+            },
+            {
+                "pest": "Bệnh phấn trắng",
+                "icon": "⚪",
+                "signs": "Lá có lớp bột trắng",
+                "predator": "Không có",
+                "organicSolution": "Trichoderma + tỏi ớt",
+                "prevention": "Thoát nước tốt, không ẩm ướt"
+            },
+            {
+                "pest": "Bệnh thối rễ",
+                "icon": "🦠",
+                "signs": "Cây héo, rễ đen thối",
+                "predator": "Không có",
+                "organicSolution": "Trichoderma tưới gốc",
+                "prevention": "Đất thoát nước, không úng"
+            },
+            {
+                "pest": "Ruồi trắng",
+                "icon": "🪰",
+                "signs": "Ruồi nhỏ bay lên khi chạm lá",
+                "predator": "Nhện 🕷️",
+                "organicSolution": "Bẫy dính vàng + Neem oil",
+                "prevention": "Vệ sinh sạch, cách ly cây bệnh"
+            }
+        ],
+        "generalTips": [
+            "Kiểm tra cây hàng ngày để phát hiện sớm",
+            "Xử lý ngay khi thấy 1-2 con sâu, đừng chờ nhiều",
+            "Ưu tiên phòng ngừa hơn chữa trị",
+            "Kết hợp nhiều phương pháp: thiên địch + thuốc thảo mộc",
+            "Ghi chép lại để rút kinh nghiệm"
+        ]
+    }
 }

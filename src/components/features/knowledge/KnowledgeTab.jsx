@@ -4,6 +4,99 @@ import knowledgeData from '../../../data/knowledge.json';
 export default function KnowledgeTab() {
     return (
         <div>
+            {/* Quick Reference Table */}
+            {knowledgeData.quickReference && (
+                <Card className="mb-4 md:mb-6">
+                    <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-2 md:mb-3 flex items-center gap-2">
+                        <span className="text-2xl md:text-3xl">🔍</span>
+                        {knowledgeData.quickReference.title}
+                    </h2>
+                    <p className="text-xs md:text-sm text-gray-600 mb-4">
+                        {knowledgeData.quickReference.description}
+                    </p>
+
+                    {/* Desktop Table */}
+                    <div className="hidden md:block overflow-x-auto">
+                        <table className="w-full border-collapse">
+                            <thead>
+                                <tr className="bg-gradient-to-r from-green-600 to-emerald-600 text-white">
+                                    <th className="p-3 text-left text-sm font-semibold">Sâu bệnh</th>
+                                    <th className="p-3 text-left text-sm font-semibold">Dấu hiệu</th>
+                                    <th className="p-3 text-left text-sm font-semibold">Thiên địch</th>
+                                    <th className="p-3 text-left text-sm font-semibold">Giải pháp hữu cơ</th>
+                                    <th className="p-3 text-left text-sm font-semibold">Phòng ngừa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {knowledgeData.quickReference.table.map((item, idx) => (
+                                    <tr
+                                        key={idx}
+                                        className={`border-b ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-green-50 transition-colors`}
+                                    >
+                                        <td className="p-3">
+                                            <div className="flex items-center gap-2">
+                                                <span className="text-2xl">{item.icon}</span>
+                                                <span className="font-medium text-sm text-gray-800">{item.pest}</span>
+                                            </div>
+                                        </td>
+                                        <td className="p-3 text-xs text-gray-700">{item.signs}</td>
+                                        <td className="p-3 text-xs text-gray-700">{item.predator}</td>
+                                        <td className="p-3 text-xs text-blue-700 font-medium">{item.organicSolution}</td>
+                                        <td className="p-3 text-xs text-green-700">{item.prevention}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {/* Mobile Cards */}
+                    <div className="md:hidden space-y-3">
+                        {knowledgeData.quickReference.table.map((item, idx) => (
+                            <div key={idx} className="border border-gray-200 rounded-lg p-3 bg-gradient-to-br from-white to-gray-50">
+                                <div className="flex items-center gap-2 mb-2">
+                                    <span className="text-2xl">{item.icon}</span>
+                                    <h4 className="font-semibold text-sm text-gray-800">{item.pest}</h4>
+                                </div>
+                                <div className="space-y-2 text-xs">
+                                    <div>
+                                        <span className="font-semibold text-gray-700">🔍 Dấu hiệu:</span>
+                                        <p className="text-gray-600 mt-1">{item.signs}</p>
+                                    </div>
+                                    <div>
+                                        <span className="font-semibold text-gray-700">🦋 Thiên địch:</span>
+                                        <p className="text-gray-600 mt-1">{item.predator}</p>
+                                    </div>
+                                    <div>
+                                        <span className="font-semibold text-blue-700">💊 Giải pháp:</span>
+                                        <p className="text-blue-600 mt-1 font-medium">{item.organicSolution}</p>
+                                    </div>
+                                    <div>
+                                        <span className="font-semibold text-green-700">🛡️ Phòng ngừa:</span>
+                                        <p className="text-green-600 mt-1">{item.prevention}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* General Tips */}
+                    <div className="mt-4 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-lg p-3 md:p-4 border-l-4 border-amber-500">
+                        <h4 className="font-semibold text-amber-800 mb-2 text-sm md:text-base flex items-center gap-2">
+                            <span className="text-lg">💡</span>
+                            Mẹo chung khi xử lý sâu bệnh
+                        </h4>
+                        <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
+                            {knowledgeData.quickReference.generalTips.map((tip, idx) => (
+                                <li key={idx} className="flex items-start gap-2">
+                                    <span className="text-amber-600 mt-1">✓</span>
+                                    <span>{tip}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </Card>
+            )}
+
             <Card className="mb-4 md:mb-6">
                 <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 md:mb-6">
                     📚 Kiến thức nông nghiệp hữu cơ
@@ -50,13 +143,19 @@ export default function KnowledgeTab() {
                     </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-3 md:p-4">
-                    <h4 className="font-semibold text-orange-800 mb-2 text-sm md:text-base">
-                        📋 Nguyên tắc 5 KHÔNG
+                <div className="bg-gradient-to-r from-red-50 to-orange-50 rounded-lg p-3 md:p-4 border-l-4 border-red-500">
+                    <h4 className="font-semibold text-red-800 mb-3 text-sm md:text-base flex items-center gap-2">
+                        <span className="text-lg">🚫</span>
+                        Nguyên tắc 5 KHÔNG
                     </h4>
-                    <p className="text-xs md:text-sm font-medium text-red-700">
-                        {knowledgeData.principles.fiveNos}
-                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3">
+                        {knowledgeData.principles.fiveNos.map((item, idx) => (
+                            <div key={idx} className="flex items-center gap-2 bg-white rounded-lg p-2 md:p-3 shadow-sm">
+                                <span className="text-red-600 text-lg md:text-xl flex-shrink-0">❌</span>
+                                <span className="text-xs md:text-sm font-medium text-gray-800">{item}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </Card>
 

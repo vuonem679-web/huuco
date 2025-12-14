@@ -57,7 +57,9 @@
                 "Bước 4: Ủ 3-6 tháng, mở nắp thỉnh thoảng",
                 "Bước 5: Lọc lấy nước cốt màu nâu"
             ],
-            "frequency": "Pha 1:500 (20ml/10l nước), giàu axit amin, kích thích bung chồi"
+            "dosage": "Pha 1:500 (20ml/10l nước)",
+            "frequency": "7-10 ngày/lần, tưới gốc hoặc phun lá",
+            "benefits": "Giàu axit amin, kích thích bung chồi, ra rễ mạnh"
         },
         {
             "name": "BAA (Banana Amino Acid)",
@@ -75,7 +77,9 @@
                 "Bước 4: Ủ 21-30 ngày, khuấy 3 ngày/lần",
                 "Bước 5: Lọc lấy nước cốt trong"
             ],
-            "frequency": "Pha 1:300 (30ml/10l), giàu kali, giúp quả to, ngọt. Tốt cho giai đoạn ra hoa đậu quả"
+            "dosage": "Pha 1:300 (30ml/10l nước)",
+            "frequency": "7-10 ngày/lần, giai đoạn ra hoa đậu quả",
+            "benefits": "Giàu kali, giúp quả to, ngọt, chắc"
         },
         {
             "name": "Canxi hòa tan (WSCa)",
@@ -92,7 +96,9 @@
                 "Bước 4: Lọc nhiều lần cho trong",
                 "Bước 5: Pha loãng trước khi dùng"
             ],
-            "frequency": "Pha 1:500 (20ml/10l), phun lá 7-10 ngày/lần, ngăn nứt quả, rụng quả non"
+            "dosage": "Pha 1:500 (20ml/10l nước)",
+            "frequency": "Phun lá 7-10 ngày/lần",
+            "benefits": "Ngăn nứt quả, rụng quả non, thối đỉnh"
         },
         {
             "name": "Chiết xuất rong biển",
@@ -110,7 +116,9 @@
                 "Bước 4: Ủ 14-21 ngày, khuấy 2 ngày/lần",
                 "Bước 5: Lọc lấy nước cốt nâu đen"
             ],
-            "frequency": "Pha 1:1000 (10ml/10l), giàu auxin, cytokinin, kích thích sinh trưởng mạnh"
+            "dosage": "Pha 1:1000 (10ml/10l nước)",
+            "frequency": "10-14 ngày/lần, phun lá hoặc tưới gốc",
+            "benefits": "Giàu auxin, cytokinin, kích thích sinh trưởng mạnh"
         },
         {
             "name": "EM1 - Vi sinh vật gốc",
