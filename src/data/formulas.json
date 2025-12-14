@@ -17,24 +17,27 @@
                 "Bước 3: Lọc lấy nước cốt, bảo quản nơi mát",
                 "Bước 4: Pha 50ml/10l nước + xà phòng, phun chiều mát"
             ],
-            "frequency": "5-7 ngày/lần, ngừng 7 ngày trước thu hoạch"
+            "frequency": "5-7 ngày/lần, ngừng 7 ngày trước thu hoạch",
+            "benefits": "Diệt sâu ăn lá, xua đuổi côn trùng, kháng nấm vi khuẩn"
         },
         {
             "name": "Dầu Neem",
             "icon": "🌿",
             "use": "Trừ sâu tự nhiên",
             "ingredients": [
-                "Dầu Neem: 10-20ml",
-                "Nước: 10 lít",
-                "Xà phòng: vài giọt"
+                "Hạt Neem khô: 500g",
+                "Nước ấm (60-70°C): 5l",
+                "Xà phòng gốc dầu: 10ml"
             ],
             "steps": [
-                "Bước 1: Pha dầu Neem với nước",
-                "Bước 2: Thêm vài giọt xà phòng để nhũ hóa",
-                "Bước 3: Khuấy đều",
-                "Bước 4: Phun chiều mát, có thể dùng trước thu hoạch"
+                "Bước 1: Nghiền nhỏ hạt Neem",
+                "Bước 2: Ngâm trong nước ấm 12 giờ",
+                "Bước 3: Lọc qua vải mịn 2-3 lần",
+                "Bước 4: Pha 100ml dung dịch + 10l nước + xà phòng",
+                "Bước 5: Dùng ngay, không để qua đêm"
             ],
-            "frequency": "7-10 ngày/lần"
+            "frequency": "7-10 ngày/lần, an toàn đến ngày thu hoạch",
+            "benefits": "An toàn, không độc hại, phân hủy nhanh trong tự nhiên. Hoạt chất Azadirachtin - chất trừ sâu tự nhiên"
         }
     ],
     "fertilizers": [
@@ -43,50 +46,268 @@
             "icon": "🐟",
             "use": "Đạm cá - Bón lá",
             "ingredients": [
-                "Cá tươi (loại nhỏ): 1kg",
-                "Đường nâu/mật: 1kg",
-                "Nước vo gạo: 3 lít"
+                "Cá tươi (cá tạp): 1kg",
+                "Đường nâu: 1kg",
+                "Men rượu (nấm men): 10g"
             ],
             "steps": [
-                "Bước 1: Cắt nhỏ cá, trộn với đường",
-                "Bước 2: Cho vào bình, đổ nước vo gạo",
-                "Bước 3: Đậy kín, để lên men 3 tháng",
-                "Bước 4: Lọc lấy nước, pha 1:500-1000 để phun lá"
+                "Bước 1: Cắt cá thành miếng vừa",
+                "Bước 2: Trộn cá + đường + men, ủ 24h",
+                "Bước 3: Cho vào can, đậy nắp kín",
+                "Bước 4: Ủ 3-6 tháng, mở nắp thỉnh thoảng",
+                "Bước 5: Lọc lấy nước cốt màu nâu"
             ],
-            "frequency": "7-10 ngày/lần"
+            "frequency": "Pha 1:500 (20ml/10l nước), giàu axit amin, kích thích bung chồi"
         },
         {
             "name": "BAA (Banana Amino Acid)",
             "icon": "🍌",
             "use": "Đạm chuối - Bón lá (giàu Kali)",
             "ingredients": [
-                "Thân chuối già: 5kg",
+                "Chuối chín: 2kg",
                 "Đường nâu: 1kg",
-                "Nước: 5 lít"
+                "Nước sạch: 3l"
             ],
             "steps": [
-                "Bước 1: Băm nhỏ thân chuối",
-                "Bước 2: Trộn với đường, ủ 2 giờ",
-                "Bước 3: Cho vào bình, thêm nước",
-                "Bước 4: Lên men 1-2 tháng, pha 1:500 phun lá"
+                "Bước 1: Cắt hoặc xay chuối",
+                "Bước 2: Trộn với đường, ủ 2-3 ngày",
+                "Bước 3: Thêm nước, đậy nắp kín",
+                "Bước 4: Ủ 21-30 ngày, khuấy 3 ngày/lần",
+                "Bước 5: Lọc lấy nước cốt trong"
             ],
-            "frequency": "7-10 ngày/lần, tốt cho giai đoạn ra hoa đậu quả"
+            "frequency": "Pha 1:300 (30ml/10l), giàu kali, giúp quả to, ngọt. Tốt cho giai đoạn ra hoa đậu quả"
         },
         {
             "name": "Canxi hòa tan (WSCa)",
             "icon": "🥚",
             "use": "Bổ sung canxi",
             "ingredients": [
-                "Vỏ trứng: 500g",
-                "Giấm gạo: 1 lít"
+                "Vỏ trứng gà khô: 500g",
+                "Giấm trắng 5%: 2l"
             ],
             "steps": [
-                "Bước 1: Rửa sạch vỏ trứng, phơi khô",
-                "Bước 2: Ngâm trong giấm 7-10 ngày",
-                "Bước 3: Vỏ trứng tan hết, lọc lấy nước",
-                "Bước 4: Pha 1:500-1000 phun lá"
+                "Bước 1: Rửa sạch, phơi khô vỏ trứng",
+                "Bước 2: Nghiền nhỏ vỏ trứng",
+                "Bước 3: Ngâm trong giấm 21 ngày",
+                "Bước 4: Lọc nhiều lần cho trong",
+                "Bước 5: Pha loãng trước khi dùng"
             ],
-            "frequency": "7-10 ngày/lần, quan trọng cho quả"
+            "frequency": "Pha 1:500 (20ml/10l), phun lá 7-10 ngày/lần, ngăn nứt quả, rụng quả non"
+        },
+        {
+            "name": "Chiết xuất rong biển",
+            "icon": "🌊",
+            "use": "Vi lượng tự nhiên",
+            "ingredients": [
+                "Rong biển tươi: 1kg",
+                "Nước mưa/RO: 10l",
+                "Đường nâu: 200g"
+            ],
+            "steps": [
+                "Bước 1: Rửa sạch rong biển, cắt nhỏ",
+                "Bước 2: Trộn với đường, ủ 3 ngày",
+                "Bước 3: Thêm nước, khuấy đều",
+                "Bước 4: Ủ 14-21 ngày, khuấy 2 ngày/lần",
+                "Bước 5: Lọc lấy nước cốt nâu đen"
+            ],
+            "frequency": "Pha 1:1000 (10ml/10l), giàu auxin, cytokinin, kích thích sinh trưởng mạnh"
+        },
+        {
+            "name": "EM1 - Vi sinh vật gốc",
+            "icon": "🧪",
+            "use": "Cải tạo đất",
+            "ingredients": [
+                "EM gốc: 1 lít (mua sẵn)",
+                "Mật mía/đường nâu: 1 lít",
+                "Nước sạch: 18 lít"
+            ],
+            "steps": [
+                "Bước 1: Trộn EM gốc + mật + nước",
+                "Bước 2: Đậy kín, ủ 7-10 ngày",
+                "Bước 3: Kiểm tra pH 3.5-4.5 (chua nhẹ)",
+                "Bước 4: Sử dụng hoặc bảo quản nơi mát"
+            ],
+            "frequency": "Ủ phân: 50ml/10kg, Tưới gốc: 20-50ml/10l, 1-2 tuần/lần",
+            "benefits": "Cải tạo đất, phân hủy chất hữu cơ nhanh, tăng hấp thu dinh dưỡng, ức chế nấm bệnh, khử mùi hôi"
         }
-    ]
+    ],
+    "soilMixes": [
+        {
+            "name": "Đất trồng đa năng",
+            "icon": "🌱",
+            "use": "Phù hợp mọi cây",
+            "ingredients": [
+                "Đất mùn: 40% (4 phần)",
+                "Xơ dừa: 30% (3 phần)",
+                "Phân trùn quế: 20% (2 phần)",
+                "Trấu hun: 10% (1 phần)",
+                "Tro trấu: 5g/10l hỗn hợp"
+            ],
+            "steps": [
+                "Bước 1: Sàng đất mùn, loại bỏ sỏi đá",
+                "Bước 2: Ngâm xơ dừa 24h, vắt ráo",
+                "Bước 3: Trộn đất mùn + xơ dừa đều",
+                "Bước 4: Thêm phân trùn + trấu hun",
+                "Bước 5: Rắc tro trấu, trộn đều",
+                "Bước 6: Tưới ẩm 60-70%, ủ 7 ngày"
+            ],
+            "properties": "pH 6.0-7.0, thoát nước tốt, giữ ẩm vừa phải. Phù hợp rau lá, cây gia vị, hoa cảnh"
+        },
+        {
+            "name": "Đất ươm hạt giống",
+            "icon": "🌿",
+            "use": "Cho mầm non",
+            "ingredients": [
+                "Xơ dừa mịn: 50% (5 phần)",
+                "Phân trùn quế: 30% (3 phần)",
+                "Cát sông sạch: 15% (1.5 phần)",
+                "Trấu hun mịn: 5% (0.5 phần)",
+                "Trichoderma: 10g/10l hỗn hợp"
+            ],
+            "steps": [
+                "Bước 1: Xử lý xơ dừa với nước sôi",
+                "Bước 2: Rửa cát sông nhiều lần",
+                "Bước 3: Sàng phân trùn cho mịn",
+                "Bước 4: Trộn đều tất cả thành phần",
+                "Bước 5: Tưới Trichoderma pha loãng",
+                "Bước 6: Ủ 5-7 ngày trước dùng"
+            ],
+            "properties": "Thoát nước cực tốt, kháng nấm, mịn màng. Tỷ lệ nảy mầm cao, rễ phát triển khỏe"
+        },
+        {
+            "name": "Đất trồng cây ăn quả",
+            "icon": "🍎",
+            "use": "Cây lâu năm",
+            "ingredients": [
+                "Đất vườn: 35% (3.5 phần)",
+                "Phân chuồng ủ: 25% (2.5 phần)",
+                "Xơ dừa: 20% (2 phần)",
+                "Cát thô: 15% (1.5 phần)",
+                "Tro bếp: 5% (0.5 phần)",
+                "Vôi bột: 10g/10l (điều chỉnh pH)"
+            ],
+            "steps": [
+                "Bước 1: Kiểm tra pH đất vườn (6.0-7.5)",
+                "Bước 2: Trộn đất + phân chuồng",
+                "Bước 3: Thêm xơ dừa + cát thô",
+                "Bước 4: Rắc tro bếp đều",
+                "Bước 5: Thêm vôi nếu đất chua",
+                "Bước 6: Ủ 2-3 tuần trước trồng"
+            ],
+            "properties": "Giàu dinh dưỡng, thoát nước tốt, giữ ẩm lâu. Phù hợp bơ, chuối, cà phê, sầu riêng"
+        }
+    ],
+    "compost": [
+        {
+            "name": "Phân compost nóng (Hot Composting)",
+            "icon": "🔥",
+            "duration": "2-3 tháng",
+            "type": "Hiếu khí",
+            "ingredients": [
+                "Vật liệu nâu (C cao): 70% - Lá khô, rơm rạ, mùn cưa, vỏ cây, giấy carton",
+                "Vật liệu xanh (N cao): 30% - Rau quả thừa, cỏ tươi, phân tươi (bò, gà, lợn)",
+                "EM hoặc men ủ: 500ml/1m³"
+            ],
+            "steps": [
+                "Tuần 1-2: Trộn đều mỗi 3 ngày",
+                "* Pha nhiệt: Giữ nhiệt độ 55-65°C liên tục 2-3 ngày để diệt mầm bệnh, mầm cỏ",
+                "Tuần 2-4: Vào pha giảm nhiệt, trộn đều mỗi 7 ngày",
+                "Tuần 4-6: Ổn định 25-35°C",
+                "Hoàn thành: Màu nâu đen, mùi đất"
+            ],
+            "benefits": "Nhanh, diệt vi khuẩn có hại, không mùi hôi",
+            "note": "Cần theo dõi nhiệt độ, lật hằng ngày nếu đống ủ quá ẩm. Tỷ lệ C:N = 30:1"
+        },
+        {
+            "name": "Phân Bokashi (Fermented Compost)",
+            "icon": "🍄",
+            "duration": "2-4 tuần",
+            "type": "Kị khí",
+            "ingredients": [
+                "Rác thải hữu cơ: 10kg - Thức ăn thừa, vỏ rau quả",
+                "Cám gạo: 2kg",
+                "Men Bokashi (EM): 200ml",
+                "Đường nâu: 200g",
+                "Nước: 1-2l",
+                "Thùng kín khí: 20-30l"
+            ],
+            "steps": [
+                "Bước 1: Pha EM + đường + nước",
+                "Bước 2: Trộn rác thải + cám gạo",
+                "Bước 3: Tưới dung dịch EM",
+                "Bước 4: Nén chặt, đậy kín",
+                "Bước 5: Ủ kỵ khí 2-4 tuần",
+                "Bước 6: Mùi chua ngọt = hoàn thành"
+            ],
+            "benefits": "Nhanh nhất, không mùi hôi, dinh dưỡng cao",
+            "note": "Nhanh có nước để pha tưới, Bã tiếp tục chuyển qua ủ compost"
+        },
+        {
+            "name": "Phân Trùn Quế (Vermicompost)",
+            "icon": "🪱",
+            "duration": "3-6 tháng",
+            "type": "Nuôi trùn",
+            "ingredients": [
+                "Trùn Quế (Eisenia fetida): 1-2kg",
+                "Thức ăn Trùn: 5-10kg/tuần - Vỏ rau quả, rác nhà bếp, phân bò ủ, giấy carton",
+                "Vật liệu lót: Rơm, lá khô",
+                "Khay nuôi: Nhựa hoặc gỗ"
+            ],
+            "steps": [
+                "Bước 1: Lót rơm dày 5-10cm",
+                "Bước 2: Thả giun, cho thức ăn",
+                "Bước 3: Duy trì ẩm 70-80%",
+                "Bước 4: Cho ăn 2-3 lần/tuần",
+                "Bước 5: Tránh ánh sáng, mưa",
+                "Bước 6: Thu hoạch sau 3-6 tháng"
+            ],
+            "benefits": "Phân Trùn (vermicast) + Dịch giun (worm tea). Dinh dưỡng cao nhất, cây hấp thụ tốt",
+            "note": "Chất lượng cao nhất trong các loại phân hữu cơ"
+        }
+    ],
+    "compostQuality": {
+        "title": "Kiểm tra chất lượng compost",
+        "visual": {
+            "title": "Quan sát trực tiếp",
+            "items": [
+                "Màu sắc: Nâu đen đậm",
+                "Kết cấu: Tơi xốp, không dính",
+                "Mùi: Thơm như đất rừng",
+                "Nhiệt độ: Nguội như môi trường"
+            ]
+        },
+        "test": {
+            "title": "Test đơn giản",
+            "items": [
+                "Test nảy mầm: Gieo hạt cải xanh",
+                "Tỷ lệ nảy mầm: >80% = tốt",
+                "Test pH: 6.5-7.5 lý tưởng",
+                "Độ ẩm: 40-60% là phù hợp"
+            ]
+        },
+        "warning": {
+            "title": "Dấu hiệu chưa chín",
+            "items": [
+                "Mùi hôi: Ammonia hoặc thối",
+                "Nhiệt độ cao: >40°C",
+                "Màu xanh: Còn vật liệu tươi",
+                "Ruồi muỗi: Tụ tập đông"
+            ]
+        }
+    },
+    "storage": {
+        "title": "Bảo quản và an toàn",
+        "storage": [
+            "Nơi mát mẻ: Tránh ánh sáng trực tiếp",
+            "Nắp kín: Tránh bay hơi và ô nhiễm",
+            "Ghi nhãn: Tên, ngày pha, cách dùng",
+            "Thời hạn: 6-12 tháng (nước cốt), 24h (đã pha)"
+        ],
+        "safety": [
+            "Đeo bảo hộ: Khẩu trang, găng tay khi pha",
+            "Test nhỏ: Thử trên vài cây trước khi phun rộng",
+            "Thời gian phun: Chiều mát 5-6h, sáng sớm 6-7h",
+            "Khoảng cách: Ngừng 3-7 ngày trước thu hoạch"
+        ]
+    }
 }

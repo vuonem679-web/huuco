@@ -21,6 +21,17 @@
                     "Tro trấu: Cung cấp kali, cải tạo đất",
                     "Phân xanh: Trồng đậu xanh, cỏ keo rồi vùi"
                 ]
+            },
+            {
+                "title": "Chỉ số đánh giá đất khỏe",
+                "icon": "🌍",
+                "items": [
+                    "pH: 6.0-7.0 (trung tính nhẹ)",
+                    "Mùn hữu cơ: >3% (đất tốt)",
+                    "Cấu trúc: Tơi xốp, không nén chặt",
+                    "Màu sắc: Nâu đậm, xám đen",
+                    "Mùi: Thơm đất, không mùi chua"
+                ]
             }
         ]
     },
@@ -35,6 +46,218 @@
             "Kiên nhẫn: Nông nghiệp hữu cơ cần thời gian để có kết quả tốt"
         ],
         "fiveNos": "Không thuốc diệt cỏ; không thuốc trừ sâu; không chất bảo quản; không chất kích thích, tăng trưởng; không dư lượng hóa chất độc hại."
+    },
+    "ipm": {
+        "title": "IPM - Quản lý sâu bệnh tổng hợp",
+        "description": "IPM (Integrated Pest Management) là phương pháp kiểm soát sâu bệnh bền vững, ưu tiên phòng ngừa và sử dụng thiên địch thay vì hóa chất.",
+        "pyramid": [
+            {
+                "level": "Tầng 1: Nền tảng",
+                "icon": "🌱",
+                "description": "Đất khỏe, cây khỏe, giống tốt"
+            },
+            {
+                "level": "Tầng 2: Phòng ngừa",
+                "icon": "🛡️",
+                "description": "Luân canh, xen canh, vệ sinh vườn"
+            },
+            {
+                "level": "Tầng 3: Sinh học",
+                "icon": "🐞",
+                "description": "Thiên địch, vi sinh vật có ích"
+            },
+            {
+                "level": "Tầng 4: Can thiệp",
+                "icon": "🌿",
+                "description": "Thuốc thảo mộc, Bt khi cần thiết"
+            }
+        ],
+        "attractPredators": {
+            "title": "Thu hút thiên địch",
+            "items": [
+                "Cây hoa: Cúc vạn thọ, hoa hướng dương nhỏ",
+                "Cây thảo mộc: Húng quế, kinh giới, lá lốt",
+                "Để bãi hoang: 5-10% diện tích cho thiên địch ẩn náu",
+                "Tránh phun rộng: Chỉ xử lý điểm có sâu bệnh"
+            ]
+        },
+        "warningSign": {
+            "title": "Dấu hiệu cảnh báo sớm",
+            "items": [
+                "Lá vàng bất thường: Thiếu dinh dưỡng hoặc bệnh",
+                "Lá cuộn, nhăn: Rầy mềm, bệnh virus",
+                "Đốm trắng, vàng: Nhện đỏ, thrip",
+                "Chất dính trên lá: Rầy mềm tiết mật ngọt"
+            ]
+        }
+    },
+    "naturalPredators": [
+        {
+            "name": "Bọ rùa (Ladybug)",
+            "icon": "🐞",
+            "target": "Diệt rầy mềm",
+            "prey": [
+                "Rầy mềm (Aphids)",
+                "Nhện đỏ",
+                "Trứng sâu nhỏ",
+                "Hiệu quả: 50-100 con rầy/ngày"
+            ],
+            "attract": [
+                "Trồng hoa cúc vạn thọ",
+                "Hoa hướng dương nhỏ",
+                "Cây thì là",
+                "Cây rau mùi"
+            ],
+            "shelter": [
+                "Để cỏ hoang quanh vườn",
+                "Đống đá nhỏ",
+                "Thân cây khô",
+                "KHÔNG phun thuốc hóa học"
+            ]
+        },
+        {
+            "name": "Ong ký sinh (Parasitic Wasps)",
+            "icon": "🐝",
+            "target": "Kiểm soát sâu non",
+            "prey": [
+                "Sâu cuốn lá",
+                "Sâu đục quả",
+                "Trứng bướm đêm",
+                "Cách thức: Đẻ trứng vào sâu"
+            ],
+            "attract": [
+                "Hoa cải xanh để hạt",
+                "Hoa cúc tần",
+                "Cây húng quế",
+                "Hoa ngò (cilantro)"
+            ],
+            "note": [
+                "Ong nhỏ 1-2mm, không đốt người",
+                "Cần phấn hoa để sống",
+                "Tránh thuốc diệt côn trùng",
+                "Để 5-10% đất hoang"
+            ]
+        },
+        {
+            "name": "Rận đầu vàng (Green Lacewing)",
+            "icon": "🦋",
+            "target": "Diệt rầy + thrip",
+            "prey": [
+                "Rầy mềm",
+                "Thrip (ruồi vàng)",
+                "Nhện đỏ",
+                "Trứng sâu bướm",
+                "Hiệu quả: Ấu trùng săn hung dữ"
+            ],
+            "attract": [
+                "Hoa thì là nhỏ",
+                "Hoa cải dại",
+                "Cây đậu đỗ",
+                "Mật hoa: Nguồn dinh dưỡng"
+            ],
+            "features": [
+                "Cánh màu xanh trong suốt",
+                "Bay về đèn ban đêm",
+                "Ấu trùng màu nâu",
+                "Rất hiệu quả trong nhà kính"
+            ]
+        },
+        {
+            "name": "Ếch nhái (Frogs & Toads)",
+            "icon": "🐸",
+            "target": "Diệt ốc sên + châu chấu",
+            "prey": [
+                "Ốc sên",
+                "Châu chấu",
+                "Sâu bướm lớn",
+                "Bọ xít",
+                "Hoạt động: Ban đêm + sáng sớm"
+            ],
+            "environment": [
+                "Ao nước nhỏ (1-2m²)",
+                "Đống đá/gạch có khe",
+                "Bụi cây rậm",
+                "Độ ẩm cao"
+            ],
+            "protect": [
+                "KHÔNG dùng thuốc trừ sâu",
+                "Giữ nguồn nước sạch",
+                "Tránh nuôi vịt (ăn ếch con)",
+                "Để cỏ dại quanh ao"
+            ]
+        },
+        {
+            "name": "Nhện (Spiders)",
+            "icon": "🕷️",
+            "target": "Diệt ruồi + muỗi",
+            "prey": [
+                "Ruồi trắng",
+                "Thrip",
+                "Muỗi",
+                "Bọ nhảy",
+                "Loại: Nhện nhảy, nhện sói"
+            ],
+            "environment": [
+                "Cỏ dại thấp",
+                "Gốc cây",
+                "Thân cây khô",
+                "Khe đá/gạch"
+            ],
+            "benefits": [
+                "Săn mồi liên tục 24/7",
+                "Không gây hại cây trồng",
+                "Kiểm soát côn trùng bay",
+                "Loại an toàn (không cắn người)"
+            ]
+        }
+    ],
+    "attractPredatorsGeneral": {
+        "title": "Nguyên tắc chung để thu hút thiên địch",
+        "shouldDo": [
+            "Đa dạng hoa: Trồng 5-10% diện tích là hoa (cúc, hướng dương, thì là)",
+            "Để bãi hoang: 5-10% đất không canh tác cho thiên địch ẩn náu",
+            "Nguồn nước: Ao nhỏ, chậu nước để ếch, nhái sinh sản",
+            "Nơi trú ẩn: Đống đá, thân cây khô, cỏ khô",
+            "Kiên nhẫn: Cần 2-3 tháng để thiên địch tập trung"
+        ],
+        "shouldAvoid": [
+            "Thuốc hóa học: Giết cả thiên địch lẫn sâu hại",
+            "Cày xới sâu: Phá hủy tổ ong, nhện dưới đất",
+            "Dọn sạch quá mức: Thiên địch không có nơi trú ẩn",
+            "Đèn quá sáng ban đêm: Làm rối loạn côn trùng có ích",
+            "Monoculture: Trồng 1 loại cây → thiếu đa dạng sinh học"
+        ],
+        "goldenTip": "Trồng xen canh: Rau → Hoa → Thảo mộc. Càng đa dạng, càng nhiều thiên địch!"
+    },
+    "soilHealth": {
+        "title": "Sức khỏe đất và cải tạo đất bền vững",
+        "rotation": {
+            "title": "Luân canh thông minh",
+            "items": [
+                "Họ đậu: Cung cấp nitơ tự nhiên",
+                "Họ cỏ: Cải thiện cấu trúc đất",
+                "Cây có củ sâu: Phá tầng đất cứng",
+                "Thời gian nghỉ: 1-2 tháng/năm"
+            ]
+        },
+        "waterManagement": {
+            "title": "Quản lý nước bền vững",
+            "items": [
+                "Tưới nhỏ giọt: Tiết kiệm 40-60% nước",
+                "Phủ rơm rạ: Giữ ẩm, giảm bốc hơi",
+                "Thu gom nước mưa: Dự trữ mùa khô",
+                "Tưới sáng sớm: Giảm thất thoát do bốc hơi"
+            ]
+        },
+        "monitoring": {
+            "title": "Theo dõi chất lượng đất",
+            "items": [
+                "Kiểm tra pH: 6 tháng/lần",
+                "Đếm giun đất: >5 con/m² là tốt",
+                "Test thấm nước: 1-5cm/giờ lý tưởng",
+                "Màu lá cây: Xanh đậm, không vàng"
+            ]
+        }
     },
     "fertilizers": [
         {
@@ -85,7 +308,14 @@
             "type": "Hỗn hợp vi sinh vật",
             "use": "Ủ phân, cải tạo đất",
             "dosage": "20-50ml/10l nước",
-            "application": "Lactic, Bacillus, nấm men"
+            "application": "Lactic, Bacillus, nấm men",
+            "benefits": [
+                "Cải tạo đất, tăng độ tơi xốp",
+                "Phân hủy chất hữu cơ nhanh hơn",
+                "Tăng hấp thu dinh dưỡng của cây",
+                "Ức chế nấm bệnh gây thối rễ",
+                "Khử mùi hôi (chuồng, ao, bể phân)"
+            ]
         }
     ]
 }

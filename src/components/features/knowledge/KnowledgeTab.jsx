@@ -4,18 +4,18 @@ import knowledgeData from '../../../data/knowledge.json';
 export default function KnowledgeTab() {
     return (
         <div>
-            {/* Soil Preparation */}
             <Card className="mb-4 md:mb-6">
                 <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 md:mb-6">
                     📚 Kiến thức nông nghiệp hữu cơ
                 </h2>
 
+                {/* Soil Preparation */}
                 <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-3 md:mb-4 flex items-center gap-2">
                     <span className="text-xl md:text-2xl">🌱</span>
                     {knowledgeData.soilPreparation.title}
                 </h3>
 
-                <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
                     {knowledgeData.soilPreparation.sections.map((section, idx) => (
                         <div key={idx} className="bg-amber-50 rounded-lg p-3 md:p-4">
                             <h4 className="font-semibold text-amber-800 mb-2 md:mb-3 text-sm md:text-base flex items-center gap-2">
@@ -59,6 +59,199 @@ export default function KnowledgeTab() {
                     </p>
                 </div>
             </Card>
+
+            {/* IPM */}
+            {knowledgeData.ipm && (
+                <Card className="mb-4 md:mb-6">
+                    <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-3 md:mb-4 flex items-center gap-2">
+                        <span className="text-xl md:text-2xl">🛡️</span>
+                        {knowledgeData.ipm.title}
+                    </h3>
+
+                    <p className="text-xs md:text-sm text-gray-700 mb-4">{knowledgeData.ipm.description}</p>
+
+                    {/* IPM Pyramid */}
+                    <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-3 md:p-4 mb-4">
+                        <h4 className="font-semibold text-green-800 mb-3 text-sm md:text-base">
+                            🎯 Nguyên tắc 4 tầng phòng thủ
+                        </h4>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 text-xs md:text-sm">
+                            {knowledgeData.ipm.pyramid.map((level, idx) => (
+                                <div key={idx} className="text-center">
+                                    <div className="bg-white rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center mx-auto mb-2">
+                                        <span className="text-lg md:text-xl">{level.icon}</span>
+                                    </div>
+                                    <h5 className="font-medium text-gray-700 mb-1 text-xs md:text-sm">{level.level}</h5>
+                                    <p className="text-xs text-gray-600">{level.description}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Attract Predators & Warning Signs */}
+                    <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-yellow-50 rounded-lg p-3 md:p-4">
+                            <h4 className="font-semibold text-yellow-800 mb-2 md:mb-3 text-sm md:text-base">
+                                🦋 {knowledgeData.ipm.attractPredators.title}
+                            </h4>
+                            <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
+                                {knowledgeData.ipm.attractPredators.items.map((item, idx) => (
+                                    <li key={idx}>• {item}</li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="bg-red-50 rounded-lg p-3 md:p-4">
+                            <h4 className="font-semibold text-red-800 mb-2 md:mb-3 text-sm md:text-base">
+                                🚨 {knowledgeData.ipm.warningSign.title}
+                            </h4>
+                            <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
+                                {knowledgeData.ipm.warningSign.items.map((item, idx) => (
+                                    <li key={idx}>• {item}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </Card>
+            )}
+
+            {/* Natural Predators */}
+            {knowledgeData.naturalPredators && (
+                <Card className="mb-4 md:mb-6">
+                    <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-3 md:mb-4 flex items-center gap-2">
+                        <span className="text-xl md:text-2xl">🐞</span>
+                        Thu hút và nuôi dưỡng thiên địch
+                    </h3>
+
+                    <div className="grid gap-4 md:gap-6">
+                        {knowledgeData.naturalPredators.map((predator, idx) => (
+                            <div key={idx} className="border border-gray-200 rounded-lg p-4 md:p-6 bg-gradient-to-br from-white to-gray-50">
+                                <div className="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
+                                    <span className="text-2xl md:text-3xl">{predator.icon}</span>
+                                    <div className="flex-1">
+                                        <h4 className="text-base md:text-lg font-semibold text-gray-800">{predator.name}</h4>
+                                        <span className="inline-block mt-1 px-2 py-1 bg-green-100 text-green-800 rounded text-xs">
+                                            {predator.target}
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div className="grid md:grid-cols-3 gap-3 md:gap-4">
+                                    <div className="bg-white rounded p-2 md:p-3">
+                                        <h5 className="font-semibold text-gray-700 mb-2 text-xs md:text-sm">🎯 Mồi săn:</h5>
+                                        <ul className="space-y-1 text-xs text-gray-600">
+                                            {predator.prey.map((item, i) => (
+                                                <li key={i}>• {item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div className="bg-white rounded p-2 md:p-3">
+                                        <h5 className="font-semibold text-gray-700 mb-2 text-xs md:text-sm">
+                                            🌼 {predator.attract ? 'Thu hút:' : 'Môi trường:'}
+                                        </h5>
+                                        <ul className="space-y-1 text-xs text-gray-600">
+                                            {(predator.attract || predator.environment).map((item, i) => (
+                                                <li key={i}>• {item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div className="bg-gray-50 rounded p-2 md:p-3">
+                                        <h5 className="font-semibold text-gray-700 mb-2 text-xs md:text-sm">
+                                            💡 {predator.shelter ? 'Nơi ẩn náu:' : predator.note ? 'Lưu ý:' : predator.protect ? 'Bảo vệ:' : 'Đặc điểm:'}
+                                        </h5>
+                                        <ul className="space-y-1 text-xs text-gray-600">
+                                            {(predator.shelter || predator.note || predator.protect || predator.features || predator.benefits).map((item, i) => (
+                                                <li key={i}>• {item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </Card>
+            )}
+
+            {/* General Attract Predators */}
+            {knowledgeData.attractPredatorsGeneral && (
+                <Card className="mb-4 md:mb-6">
+                    <h3 className="text-lg md:text-xl font-semibold text-green-800 mb-3 md:mb-4 flex items-center gap-2">
+                        <span className="text-xl md:text-2xl">🌿</span>
+                        {knowledgeData.attractPredatorsGeneral.title}
+                    </h3>
+
+                    <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-4">
+                        <div>
+                            <h4 className="font-semibold text-green-700 mb-2 md:mb-3 text-sm md:text-base">✅ NÊN LÀM:</h4>
+                            <ul className="space-y-2 text-xs md:text-sm text-gray-700">
+                                {knowledgeData.attractPredatorsGeneral.shouldDo.map((item, idx) => (
+                                    <li key={idx} className="flex items-start gap-2">
+                                        <span className="text-green-600 mt-1">✓</span>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 className="font-semibold text-red-700 mb-2 md:mb-3 text-sm md:text-base">❌ TRÁNH LÀM:</h4>
+                            <ul className="space-y-2 text-xs md:text-sm text-gray-700">
+                                {knowledgeData.attractPredatorsGeneral.shouldAvoid.map((item, idx) => (
+                                    <li key={idx} className="flex items-start gap-2">
+                                        <span className="text-red-600 mt-1">✗</span>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="bg-green-100 rounded p-3 text-xs md:text-sm text-green-800">
+                        <strong>💡 Mẹo vàng:</strong> {knowledgeData.attractPredatorsGeneral.goldenTip}
+                    </div>
+                </Card>
+            )}
+
+            {/* Soil Health */}
+            {knowledgeData.soilHealth && (
+                <Card className="mb-4 md:mb-6">
+                    <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-3 md:mb-4 flex items-center gap-2">
+                        <span className="text-xl md:text-2xl">🌍</span>
+                        {knowledgeData.soilHealth.title}
+                    </h3>
+
+                    <div className="grid md:grid-cols-3 gap-4">
+                        <div className="bg-green-50 rounded-lg p-3 md:p-4">
+                            <h4 className="font-semibold text-green-800 mb-2 md:mb-3 text-sm md:text-base">
+                                🔄 {knowledgeData.soilHealth.rotation.title}
+                            </h4>
+                            <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
+                                {knowledgeData.soilHealth.rotation.items.map((item, idx) => (
+                                    <li key={idx}>• {item}</li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="bg-blue-50 rounded-lg p-3 md:p-4">
+                            <h4 className="font-semibold text-blue-800 mb-2 md:mb-3 text-sm md:text-base">
+                                💧 {knowledgeData.soilHealth.waterManagement.title}
+                            </h4>
+                            <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
+                                {knowledgeData.soilHealth.waterManagement.items.map((item, idx) => (
+                                    <li key={idx}>• {item}</li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="bg-purple-50 rounded-lg p-3 md:p-4">
+                            <h4 className="font-semibold text-purple-800 mb-2 md:mb-3 text-sm md:text-base">
+                                📊 {knowledgeData.soilHealth.monitoring.title}
+                            </h4>
+                            <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
+                                {knowledgeData.soilHealth.monitoring.items.map((item, idx) => (
+                                    <li key={idx}>• {item}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </Card>
+            )}
 
             {/* Fertilizers */}
             <Card className="mb-4 md:mb-6">
@@ -104,6 +297,16 @@ export default function KnowledgeTab() {
                                 <li><strong>Công dụng:</strong> {micro.use}</li>
                                 <li><strong>Liều lượng:</strong> {micro.dosage}</li>
                                 <li><strong>Dùng:</strong> {micro.application}</li>
+                                {micro.benefits && (
+                                    <li className="mt-2">
+                                        <strong>Lợi ích:</strong>
+                                        <ul className="mt-1 ml-2 space-y-1">
+                                            {micro.benefits.map((benefit, i) => (
+                                                <li key={i} className="text-xs">✓ {benefit}</li>
+                                            ))}
+                                        </ul>
+                                    </li>
+                                )}
                             </ul>
                         </div>
                     ))}

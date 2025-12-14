@@ -2,9 +2,30 @@ import Card from '../../common/Card';
 import formulasData from '../../../data/formulas.json';
 
 function FormulaCard({ formula, type }) {
-    const bgColor = type === 'pesticides' ? 'bg-purple-50' : 'bg-green-50';
-    const borderColor = type === 'pesticides' ? 'border-purple-200' : 'border-green-200';
-    const titleColor = type === 'pesticides' ? 'text-purple-800' : 'text-green-800';
+    const bgColors = {
+        pesticides: 'bg-purple-50',
+        fertilizers: 'bg-green-50',
+        soilMixes: 'bg-amber-50',
+        compost: 'bg-blue-50'
+    };
+
+    const borderColors = {
+        pesticides: 'border-purple-200',
+        fertilizers: 'border-green-200',
+        soilMixes: 'border-amber-200',
+        compost: 'border-blue-200'
+    };
+
+    const titleColors = {
+        pesticides: 'text-purple-800',
+        fertilizers: 'text-green-800',
+        soilMixes: 'text-amber-800',
+        compost: 'text-blue-800'
+    };
+
+    const bgColor = bgColors[type] || 'bg-gray-50';
+    const borderColor = borderColors[type] || 'border-gray-200';
+    const titleColor = titleColors[type] || 'text-gray-800';
 
     return (
         <div className={`border ${borderColor} rounded-lg p-4 md:p-6 ${bgColor}`}>
@@ -15,6 +36,11 @@ function FormulaCard({ formula, type }) {
                         {formula.name}
                     </h3>
                     <p className="text-xs md:text-sm text-gray-600">{formula.use}</p>
+                    {formula.duration && (
+                        <span className={`inline-block mt-1 px-2 py-1 ${borderColor} border rounded text-xs ${titleColor}`}>
+                            {formula.duration}
+                        </span>
+                    )}
                 </div>
             </div>
 
@@ -22,7 +48,7 @@ function FormulaCard({ formula, type }) {
                 {/* Ingredients */}
                 <div>
                     <h4 className={`font-semibold ${titleColor} mb-2 md:mb-3 text-sm md:text-base`}>
-                        📝 Nguyên liệu:
+                        📝 {formula.type ? 'Thành phần:' : 'Nguyên liệu:'}
                     </h4>
                     <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
                         {formula.ingredients.map((ingredient, idx) => (
@@ -34,7 +60,7 @@ function FormulaCard({ formula, type }) {
                 {/* Steps */}
                 <div>
                     <h4 className={`font-semibold ${titleColor} mb-2 md:mb-3 text-sm md:text-base`}>
-                        ⚗️ Cách pha chế:
+                        ⚗️ {formula.type === 'Nuôi trùn' ? 'Quy trình nuôi:' : formula.properties ? 'Cách trộn:' : 'Cách pha chế:'}
                     </h4>
                     <ol className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
                         {formula.steps.map((step, idx) => (
@@ -44,12 +70,38 @@ function FormulaCard({ formula, type }) {
                 </div>
             </div>
 
-            {/* Frequency */}
-            <div className="mt-3 md:mt-4 p-2 md:p-3 bg-white rounded">
-                <p className="text-xs md:text-sm">
-                    <strong className={titleColor}>Tần suất:</strong> {formula.frequency}
-                </p>
-            </div>
+            {/* Frequency or Benefits */}
+            {formula.frequency && (
+                <div className="mt-3 md:mt-4 p-2 md:p-3 bg-white rounded">
+                    <p className="text-xs md:text-sm">
+                        <strong className={titleColor}>Tần suất:</strong> {formula.frequency}
+                    </p>
+                </div>
+            )}
+
+            {formula.benefits && (
+                <div className="mt-3 md:mt-4 p-2 md:p-3 bg-white rounded">
+                    <p className="text-xs md:text-sm">
+                        <strong className={titleColor}>Ưu điểm:</strong> {formula.benefits}
+                    </p>
+                </div>
+            )}
+
+            {formula.properties && (
+                <div className="mt-3 md:mt-4 p-2 md:p-3 bg-white rounded">
+                    <p className="text-xs md:text-sm">
+                        <strong className={titleColor}>Đặc tính:</strong> {formula.properties}
+                    </p>
+                </div>
+            )}
+
+            {formula.note && (
+                <div className="mt-3 md:mt-4 p-2 md:p-3 bg-white rounded">
+                    <p className="text-xs md:text-sm">
+                        <strong className={titleColor}>Lưu ý:</strong> {formula.note}
+                    </p>
+                </div>
+            )}
         </div>
     );
 }
@@ -91,15 +143,111 @@ export default function FormulasTab() {
             </Card>
 
             {/* Fertilizers */}
-            <Card>
+            <Card className="mb-4 md:mb-6">
                 <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-3 md:mb-4 flex items-center gap-2">
-                    <span className="text-xl md:text-2xl">🌱</span>
-                    Phân bón lá hữu cơ
+                    <span className="text-xl md:text-2xl">🐟</span>
+                    Phân bón lỏng hữu cơ
                 </h3>
                 <div className="grid gap-4 md:gap-6">
                     {formulasData.fertilizers.map((formula, idx) => (
                         <FormulaCard key={idx} formula={formula} type="fertilizers" />
                     ))}
+                </div>
+            </Card>
+
+            {/* Soil Mixes */}
+            <Card className="mb-4 md:mb-6">
+                <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-3 md:mb-4 flex items-center gap-2">
+                    <span className="text-xl md:text-2xl">🏺</span>
+                    Công thức trộn đất trồng trọt
+                </h3>
+                <div className="grid gap-4 md:gap-6">
+                    {formulasData.soilMixes.map((formula, idx) => (
+                        <FormulaCard key={idx} formula={formula} type="soilMixes" />
+                    ))}
+                </div>
+            </Card>
+
+            {/* Compost */}
+            <Card className="mb-4 md:mb-6">
+                <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-3 md:mb-4 flex items-center gap-2">
+                    <span className="text-xl md:text-2xl">♻️</span>
+                    Công thức ủ phân Compost
+                </h3>
+                <div className="grid gap-4 md:gap-6">
+                    {formulasData.compost.map((formula, idx) => (
+                        <FormulaCard key={idx} formula={formula} type="compost" />
+                    ))}
+                </div>
+            </Card>
+
+            {/* Compost Quality */}
+            <Card className="mb-4 md:mb-6">
+                <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-3 md:mb-4 flex items-center gap-2">
+                    <span className="text-xl md:text-2xl">🧪</span>
+                    {formulasData.compostQuality.title}
+                </h3>
+                <div className="grid md:grid-cols-3 gap-3 md:gap-4">
+                    <div className="bg-green-50 rounded-lg p-3 md:p-4 border border-green-200">
+                        <h4 className="font-semibold text-green-800 mb-2 md:mb-3 text-sm md:text-base">
+                            👁️ {formulasData.compostQuality.visual.title}
+                        </h4>
+                        <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
+                            {formulasData.compostQuality.visual.items.map((item, idx) => (
+                                <li key={idx}>• {item}</li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="bg-blue-50 rounded-lg p-3 md:p-4 border border-blue-200">
+                        <h4 className="font-semibold text-blue-800 mb-2 md:mb-3 text-sm md:text-base">
+                            🔬 {formulasData.compostQuality.test.title}
+                        </h4>
+                        <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
+                            {formulasData.compostQuality.test.items.map((item, idx) => (
+                                <li key={idx}>• {item}</li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="bg-orange-50 rounded-lg p-3 md:p-4 border border-orange-200">
+                        <h4 className="font-semibold text-orange-800 mb-2 md:mb-3 text-sm md:text-base">
+                            ⚠️ {formulasData.compostQuality.warning.title}
+                        </h4>
+                        <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
+                            {formulasData.compostQuality.warning.items.map((item, idx) => (
+                                <li key={idx}>• {item}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            </Card>
+
+            {/* Storage and Safety */}
+            <Card>
+                <h3 className="text-lg md:text-xl font-semibold text-red-800 mb-3 md:mb-4 flex items-center gap-2">
+                    <span className="text-xl md:text-2xl">⚠️</span>
+                    {formulasData.storage.title}
+                </h3>
+                <div className="grid md:grid-cols-2 gap-4 md:gap-6">
+                    <div>
+                        <h4 className="font-semibold text-red-700 mb-2 md:mb-3 text-sm md:text-base">
+                            📦 Bảo quản:
+                        </h4>
+                        <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
+                            {formulasData.storage.storage.map((item, idx) => (
+                                <li key={idx}>• {item}</li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="font-semibold text-red-700 mb-2 md:mb-3 text-sm md:text-base">
+                            🛡️ An toàn:
+                        </h4>
+                        <ul className="space-y-1 md:space-y-2 text-xs md:text-sm text-gray-700">
+                            {formulasData.storage.safety.map((item, idx) => (
+                                <li key={idx}>• {item}</li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </Card>
         </div>
