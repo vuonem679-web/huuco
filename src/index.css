@@ -1,7 +1,23 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
-/* Custom scrollbar */
+
+/* Glassmorphism utility */
 @layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
@@ -10,4 +26,39 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  .gradient-nature {
+    background: linear-gradient(135deg, #22c55e 0%, #15803d 100%);
+  }
+
+  .gradient-earth {
+    background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  }
+
+  .gradient-forest {
+    background: linear-gradient(135deg, #4ade80 0%, #16a34a 100%);
+  }
+}
+
+/* Smooth transitions */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Body background */
+body {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #fef3c7 100%);
+  background-attachment: fixed;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }

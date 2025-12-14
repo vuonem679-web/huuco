@@ -11,11 +11,11 @@ function App() {
   const [activeTab, setActiveTab] = useLocalStorage('activeTab', 'crops');
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50 flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Header />
       <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
 
-      <main className="flex-1 max-w-6xl mx-auto w-full p-4 md:p-6">
+      <main className="flex-1 max-w-6xl mx-auto w-full p-4 md:p-6 animate-fadeInUp">
         {activeTab === 'crops' && <CropsTab />}
         {activeTab === 'knowledge' && <KnowledgeTab />}
         {activeTab === 'formulas' && <FormulasTab />}
