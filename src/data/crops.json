@@ -1,0 +1,538 @@
+{
+    "ca-chua": {
+        "name": "Cà chua",
+        "icon": "🍅",
+        "season": "Quanh năm, tốt nhất từ tháng 9-2",
+        "bestMonths": [
+            9,
+            10,
+            11,
+            12,
+            1,
+            2
+        ],
+        "seasonReason": "Thời tiết mát mẻ, ít mưa, giảm sâu bệnh",
+        "duration": 90,
+        "activities": [
+            {
+                "day": 0,
+                "type": "giong",
+                "title": "Xuống giống",
+                "desc": "Ngâm hạt trong nước ấm 40°C trong 4-6h. Gieo vào khay ươm có giá thể xơ dừa + phân trùn"
+            },
+            {
+                "day": 7,
+                "type": "care",
+                "title": "Chăm sóc mạ",
+                "desc": "Tưới sương 2 lần/ngày. Khi mạ 2 lá thật, bón phân NPK hữu cơ (1:1000)"
+            },
+            {
+                "day": 21,
+                "type": "transplant",
+                "title": "Cấy chuyển",
+                "desc": "Cây 4-5 lá thật. Cấy chiều mát, tưới ngập luống trước khi cấy. Khoảng cách 40x50cm"
+            },
+            {
+                "day": 35,
+                "type": "fertilizer",
+                "title": "Bón thúc lần 1",
+                "desc": "NPK hữu cơ (pha 1:500) + Đạm cá FAA (1:500), tưới gốc 1 lít/cây. Kích thích ra hoa"
+            },
+            {
+                "day": 55,
+                "type": "fertilizer",
+                "title": "Bón thúc lần 2",
+                "desc": "NPK hữu cơ (1:500) + Đạm chuối BAA (1:500). Trọng tâm kali + canxi nuôi quả"
+            },
+            {
+                "day": 75,
+                "type": "spray",
+                "title": "Canxi lần 2",
+                "desc": "Canxi hòa tan (WSCa 1:500). Quan trọng để quả căng mọng, không nứt"
+            },
+            {
+                "day": 90,
+                "type": "harvest",
+                "title": "Thu hoạch",
+                "desc": "Quả chín đỏ 80-90%, hái sáng sớm 6-7h. Cắt cuống, để rổ nhựa. Bảo quản nơi mát 15-20°C"
+            }
+        ],
+        "tips": [
+            "Đất cần tơi xốp, giàu mùn, pH 6.0-6.8",
+            "Tưới đều đặn, TRÁNH úng khô đột ngột (nguyên nhân chính gây nứt quả)",
+            "Bón canxi thường xuyên từ khi đậu quả (7-10 ngày/lần)",
+            "Xới xáo, bồi gốc sau mỗi lần bón phân"
+        ],
+        "pests": [
+            {
+                "name": "Rầy mềm (Aphids)",
+                "signs": "Lá cuộn, nhăn, có chất dính. Rầy tập trung ở ngọn non",
+                "solution": "Xịt nước ép tỏi ớt (100g/10l) hoặc Neem oil (1:100). Lặp lại 3-5 ngày/lần"
+            },
+            {
+                "name": "Bệnh thối đỉnh",
+                "signs": "Đỉnh quả có vết thâm đen",
+                "solution": "Do thiếu canxi. Bón canxi qua lá (WSCa 1:500) mỗi 7 ngày"
+            }
+        ],
+        "harvest": {
+            "signs": "Quả chín đỏ 80-90%, cứng, không mềm nhũn",
+            "method": "Hái sáng sớm 6-7h khi quả còn mát. Dùng kéo cắt cuống, không giật",
+            "grading": [
+                "Loại A: Quả đều, không vết xước, đường kính > 6cm",
+                "Loại B: Quả đều, vết xước nhẹ, đường kính 4-6cm"
+            ],
+            "storage": "Để nơi mát 15-20°C, độ ẩm 85-90%. Không rửa nước. Bảo quản 7-10 ngày"
+        }
+    },
+    "dua-leo": {
+        "name": "Dưa leo",
+        "icon": "🥒",
+        "season": "Quanh năm, lý tưởng tháng 3-5, 8-10",
+        "bestMonths": [
+            3,
+            4,
+            5,
+            8,
+            9,
+            10
+        ],
+        "seasonReason": "Nhiệt độ 25-30°C, ẩm độ vừa phải",
+        "duration": 50,
+        "activities": [
+            {
+                "day": 0,
+                "type": "giong",
+                "title": "Xuống giống",
+                "desc": "Gieo thẳng 2-3 hạt/hốc sâu 2cm. Hoặc ươm cấy sau 7-10 ngày"
+            },
+            {
+                "day": 15,
+                "type": "care",
+                "title": "Dựng giàn leo",
+                "desc": "Giàn cao 1.5-2m, dây nylon hoặc lưới. Buộc cây lên giàn"
+            },
+            {
+                "day": 30,
+                "type": "fertilizer",
+                "title": "Bón thúc lần 2",
+                "desc": "Tăng kali: Đạm chuối BAA (1:500) + tro bếp 100g/m². Ra hoa đậu quả"
+            },
+            {
+                "day": 45,
+                "type": "harvest",
+                "title": "Thu hoạch đầu",
+                "desc": "Hái quả non 15-18cm, màu xanh đều. Hái buổi sáng khi quả còn mát"
+            },
+            {
+                "day": 50,
+                "type": "harvest",
+                "title": "Thu hoạch liên tục",
+                "desc": "Hái hàng ngày, không để quả già. Quả già kích thích cây ngừng đậu"
+            }
+        ],
+        "tips": [
+            "Cần nhiều ánh sáng (8h/ngày) và nước",
+            "Bấm ngọn sau 5-6 lá để cây nhiều nhánh, nhiều quả",
+            "Thu hoạch hàng ngày kích thích đậu quả liên tục"
+        ],
+        "pests": [
+            {
+                "name": "Bệnh phấn trắng",
+                "signs": "Lá có lớp bột trắng, lá vàng và héo",
+                "solution": "Xịt Trichoderma 10g/10l + tỏi ớt. Lặp lại 5 ngày/lần"
+            }
+        ],
+        "harvest": {
+            "signs": "Quả dài 15-20cm, đường kính 3-4cm, màu xanh đều, cứng",
+            "method": "Hái sáng sớm 6-7h. Dùng kéo cắt cuống, giữ 1-2cm cuống",
+            "grading": [
+                "Loại A: Quả thẳng, đều, 18-20cm, không vết xước",
+                "Loại B: Quả hơi cong, 15-18cm, vết xước nhẹ"
+            ],
+            "storage": "Để rổ nhựa có lỗ thoáng. Nơi mát 12-15°C, độ ẩm 90-95%"
+        }
+    },
+    "mang-tay": {
+        "name": "Măng tây",
+        "icon": "🌱",
+        "season": "Trồng tháng 9-11, thu hoạch tháng 3-5",
+        "bestMonths": [
+            9,
+            10,
+            11
+        ],
+        "seasonReason": "Cần mùa đông lạnh để nghỉ dormancy, mùa xuân ấm để ra măng",
+        "duration": 180,
+        "activities": [
+            {
+                "day": 0,
+                "type": "giong",
+                "title": "Chuẩn bị giống",
+                "desc": "Mua củ giống 1-2 năm tuổi. Ngâm dung dịch trùn quế 1:1000 trong 2h trước trồng"
+            },
+            {
+                "day": 1,
+                "type": "transplant",
+                "title": "Trồng củ",
+                "desc": "Đào hố sâu 40cm, bỏ củ, phủ đất 10cm. Khoảng cách 40x40cm"
+            },
+            {
+                "day": 30,
+                "type": "fertilizer",
+                "title": "Bón lần 1",
+                "desc": "Phân trùn quế 2 tấn/ha + NPK hữu cơ. Bồi gốc, tạo luống cao"
+            },
+            {
+                "day": 90,
+                "type": "care",
+                "title": "Cắt tỉa",
+                "desc": "Cắt cành yếu, để 3-4 cành khỏe. Tạo tán đều để căng tích lũy dinh dưỡng"
+            },
+            {
+                "day": 150,
+                "type": "fertilizer",
+                "title": "Bón thúc cuối",
+                "desc": "Tăng cường Kali + Canxi. Chuẩn bị cho vụ thu hoạch năm sau"
+            },
+            {
+                "day": 180,
+                "type": "harvest",
+                "title": "Thu hoạch măng",
+                "desc": "Hái măng cao 20-25cm, đường kính 1.5-2cm. Cắt sát mặt đất"
+            }
+        ],
+        "tips": [
+            "Đất thoát nước tốt, giàu mùn, pH 6.5-7.5",
+            "Năm đầu chỉ để cây phát triển, không thu hoạch",
+            "Từ năm thứ 2 trở đi thu hoạch trong 2-3 tháng",
+            "Tuổi thọ cây 15-20 năm nếu chăm sóc tốt"
+        ],
+        "pests": [
+            {
+                "name": "Sâu đầu đen",
+                "signs": "Măng có lỗ đen, sâu ăn ruột măng",
+                "solution": "Dùng bẫy đèn UV ban đêm. Phun Bacillus thuringiensis (BT) 10g/10l nước"
+            }
+        ],
+        "harvest": {
+            "signs": "Măng cao 20-25cm, đầu còn khép kín, cứng",
+            "method": "Hái sáng sớm, dùng dao sắc cắt sát đất. Hái 2 ngày/lần",
+            "grading": [
+                "Loại A: Măng thẳng, đường kính >2cm, đầu khép kín",
+                "Loại B: Măng hơi cong, đường kính 1.5-2cm"
+            ],
+            "storage": "Bảo quản lạnh 2-4°C, đóng túi PE. Sử dụng trong 5-7 ngày"
+        }
+    },
+    "bo": {
+        "name": "Bơ",
+        "icon": "🥑",
+        "season": "Trồng tháng 4-5, 9-10",
+        "bestMonths": [
+            4,
+            5,
+            9,
+            10
+        ],
+        "seasonReason": "Mùa mưa vừa phải, tránh mùa khô và mưa lớn",
+        "duration": 1095,
+        "activities": [
+            {
+                "day": 0,
+                "type": "giong",
+                "title": "Chọn giống",
+                "desc": "Cây ghép 1-2 năm, giống 034, Booth 7. Kiểm tra gốc ghép và tán lá"
+            },
+            {
+                "day": 1,
+                "type": "transplant",
+                "title": "Trồng cây",
+                "desc": "Hố 80x80x80cm. Bón phân chuồng 30kg + vôi bột 1kg/hố. Trồng ngang gốc ghép"
+            },
+            {
+                "day": 90,
+                "type": "fertilizer",
+                "title": "Bón lần 1",
+                "desc": "Phân chuồng 10kg + NPK (16-16-8) 500g/cây. Bón cách gốc 1m"
+            },
+            {
+                "day": 180,
+                "type": "care",
+                "title": "Tỉa cành",
+                "desc": "Cắt cành khô, cành chùm, cành mọc trong. Tạo tán cây thông thoáng"
+            },
+            {
+                "day": 365,
+                "type": "fertilizer",
+                "title": "Bón năm 2",
+                "desc": "Phân chuồng 20kg + NPK 1kg/cây. Chia 3 lần: tháng 3, 7, 10"
+            },
+            {
+                "day": 1095,
+                "type": "harvest",
+                "title": "Thu hoạch",
+                "desc": "Quả già đủ (sau 6-8 tháng đậu). Hái có cuống, ủ chín 5-7 ngày"
+            }
+        ],
+        "tips": [
+            "Cần đất sâu, thoát nước tốt, pH 5.5-7.0",
+            "Tưới đủ nước nhưng không ngập úng",
+            "Tỉa cành thường xuyên để cây thông thoáng",
+            "Cây bắt đầu cho trái từ năm thứ 3-4"
+        ],
+        "pests": [
+            {
+                "name": "Bệnh thối quả",
+                "signs": "Quả có vết thâm đen, thối từ cuống vào trong",
+                "solution": "Cắt bỏ quả bị bệnh. Phun đồng sunfat 0.3% hoặc Validamycin"
+            }
+        ],
+        "harvest": {
+            "signs": "Quả to đủ size, vỏ từ xanh đậm chuyển xanh nhạt, bóp hơi mềm",
+            "method": "Hái bằng cần câu có lưới, giữ nguyên cuống. Ủ chín tự nhiên",
+            "grading": [
+                "Loại A: Quả >300g, không tì vết, đều đặn",
+                "Loại B: Quả 200-300g, tì vết nhẹ"
+            ],
+            "storage": "Ủ chín nơi mát 20-25°C. Sau khi chín bảo quản lạnh 7-10 ngày"
+        }
+    },
+    "chuoi": {
+        "name": "Chuối",
+        "icon": "🍌",
+        "season": "Trồng quanh năm, tốt nhất tháng 3-5",
+        "bestMonths": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "seasonReason": "Mùa mưa thuận lợi cho sinh trưởng, tránh gió mùa đông",
+        "duration": 365,
+        "activities": [
+            {
+                "day": 0,
+                "type": "giong",
+                "title": "Chọn giống",
+                "desc": "Chồi chuối con khỏe, cao 40-60cm. Giống Laba, Già lùn, Tiêu hồng"
+            },
+            {
+                "day": 1,
+                "type": "transplant",
+                "title": "Trồng chuối",
+                "desc": "Hố 60x60x50cm. Khoảng cách 2x3m. Bón phân chuồng 15-20kg/hố"
+            },
+            {
+                "day": 30,
+                "type": "fertilizer",
+                "title": "Bón thúc 1",
+                "desc": "NPK (20-20-15) 300g + Urê 100g/cây. Bón hình vòng cung cách gốc 50cm"
+            },
+            {
+                "day": 90,
+                "type": "care",
+                "title": "Tỉa chồi",
+                "desc": "Chỉ để 1 chồi con khỏe nhất, cắt bỏ các chồi khác. Bồi gốc, vun đất"
+            },
+            {
+                "day": 180,
+                "type": "fertilizer",
+                "title": "Bón thúc 2",
+                "desc": "Tăng Kali: NPK (16-16-24) 400g + KCl 200g/cây. Giai đoạn ra hoa"
+            },
+            {
+                "day": 270,
+                "type": "care",
+                "title": "Chăm sóc buồng",
+                "desc": "Cắt hoa chuối đực, bao túi nilon buồng chuối. Chống đỡ buồng"
+            },
+            {
+                "day": 365,
+                "type": "harvest",
+                "title": "Thu hoạch",
+                "desc": "Buồng chuối đầy đặn, quả tròn béo. Cắt cả buồng vào sáng sớm"
+            }
+        ],
+        "tips": [
+            "Cần nước nhiều, đất màu mỡ, pH 5.5-7.0",
+            "Che chắn gió mạnh, đặc biệt khi có buồng",
+            "Luôn duy trì 1 cây mẹ + 1 cây con khỏe",
+            "Bao buồng chuối để tránh dơi, côn trùng"
+        ],
+        "pests": [
+            {
+                "name": "Bệnh héo xanh",
+                "signs": "Lá vàng từ rìa vào trong, thân cây héo đổ",
+                "solution": "Cắt bỏ cây bệnh, khử trùng dụng cụ. Trồng giống kháng bệnh"
+            }
+        ],
+        "harvest": {
+            "signs": "Buồng chuối đầy đặn, quả tròn béo, góc cạnh mờ đi",
+            "method": "Cắt cả buồng bằng dao sắc. Treo buồng nơi mát để chín đều",
+            "grading": [
+                "Loại A: Buồng đều đặn, >8kg, quả không tì vết",
+                "Loại B: Buồng 6-8kg, quả có tì vết nhẹ"
+            ],
+            "storage": "Treo nơi mát, thông thoáng. Ủ chín bằng carbua hoặc tự nhiên"
+        }
+    },
+    "ca-phe": {
+        "name": "Cà phê",
+        "icon": "☕",
+        "season": "Trồng tháng 6-8 (mùa mưa)",
+        "bestMonths": [
+            6,
+            7,
+            8
+        ],
+        "seasonReason": "Mùa mưa giúp cây con phát triển tốt, tránh nắng gắt",
+        "duration": 1460,
+        "activities": [
+            {
+                "day": 0,
+                "type": "giong",
+                "title": "Chọn giống",
+                "desc": "Cây giống 6-8 tháng tuổi, cao 30-40cm. Giống Arabica, Robusta, Catimor"
+            },
+            {
+                "day": 1,
+                "type": "transplant",
+                "title": "Trồng cà phê",
+                "desc": "Hố 60x60x60cm. Khoảng cách 3x3m. Che bóng mát năm đầu"
+            },
+            {
+                "day": 90,
+                "type": "fertilizer",
+                "title": "Bón lần 1",
+                "desc": "NPK (16-16-8) 200g + phân chuồng 5kg/cây. Bón đầu mùa mưa"
+            },
+            {
+                "day": 365,
+                "type": "care",
+                "title": "Tỉa cành năm 1",
+                "desc": "Tỉa cành thấp <40cm, cành sát thân. Tạo tán 2-3 tầng"
+            },
+            {
+                "day": 730,
+                "type": "fertilizer",
+                "title": "Bón năm 2",
+                "desc": "Tăng NPK: 400g + phân chuồng 10kg/cây. Chia 2 lần tháng 3, 8"
+            },
+            {
+                "day": 1095,
+                "type": "care",
+                "title": "Ra hoa đậu quả",
+                "desc": "Cây bắt đầu ra hoa. Bón thúc phân lân kali, tưới đều đặn"
+            },
+            {
+                "day": 1460,
+                "type": "harvest",
+                "title": "Thu hoạch cà phê",
+                "desc": "Hái chín đỏ 90%, sáng sớm. Phơi khô 15-20 ngày đạt 12-13% ẩm"
+            }
+        ],
+        "tips": [
+            "Thích khí hậu mát mẻ, độ cao >500m",
+            "Cần che bóng mát những năm đầu",
+            "Tỉa cành thường xuyên tạo tán thông thoáng",
+            "Cây cho trái từ năm thứ 3, sung quả năm thứ 5-15"
+        ],
+        "pests": [
+            {
+                "name": "Sâu đục quả",
+                "signs": "Quả có lỗ nhỏ, bột cưa, hạt bị đục rỗng",
+                "solution": "Hái sạch quả già, đốt tiêu hủy. Phun thuốc sinh học BT 15g/10l"
+            }
+        ],
+        "harvest": {
+            "signs": "Quả chín đỏ tươi 90%, còn lại vàng cam. Bóp mềm, ngọt",
+            "method": "Hái thủ công, chỉ hái quả chín. Hái sáng sớm 6-8h",
+            "grading": [
+                "Loại A: Quả chín đều đỏ, hạt đầy đặn",
+                "Loại B: Quả hơi xanh, hạt nhỏ"
+            ],
+            "storage": "Xử lý ướt hoặc khô. Phơi nắng đạt độ ẩm 12-13%, bảo quản nơi khô ráo"
+        }
+    },
+    "sau-rieng": {
+        "name": "Sầu riêng",
+        "icon": "🥭",
+        "season": "Trồng tháng 5-7 (đầu mùa mưa)",
+        "bestMonths": [
+            5,
+            6,
+            7
+        ],
+        "seasonReason": "Đầu mùa mưa thuận lợi cho cây con sinh trưởng",
+        "duration": 2190,
+        "activities": [
+            {
+                "day": 0,
+                "type": "giong",
+                "title": "Chọn giống",
+                "desc": "Cây ghép 1-2 năm, giống Ri6, Monthong, Chanee. Kiểm tra vết ghép"
+            },
+            {
+                "day": 1,
+                "type": "transplant",
+                "title": "Trồng sầu riêng",
+                "desc": "Hố 1x1x1m. Khoảng cách 8x10m. Bón phân chuồng 50kg + vôi 2kg/hố"
+            },
+            {
+                "day": 180,
+                "type": "fertilizer",
+                "title": "Bón thúc 1",
+                "desc": "NPK (16-16-8) 500g + phân chuồng 20kg/cây. Bón hình vòng cung"
+            },
+            {
+                "day": 365,
+                "type": "care",
+                "title": "Tỉa cành năm 1",
+                "desc": "Tỉa cành quá thấp, cành chéo chạm. Tạo thân chính cao 1.5-2m"
+            },
+            {
+                "day": 730,
+                "type": "fertilizer",
+                "title": "Bón năm 2",
+                "desc": "NPK 1kg + phân chuồng 30kg/cây. Chia 3 lần: tháng 3, 7, 10"
+            },
+            {
+                "day": 1825,
+                "type": "care",
+                "title": "Cây ra hoa",
+                "desc": "Cây 5 năm tuổi bắt đầu ra hoa. Tỉa bớt hoa, để 50-70 quả/cây"
+            },
+            {
+                "day": 2190,
+                "type": "harvest",
+                "title": "Thu hoạch sầu riêng",
+                "desc": "Quả già đủ (110-120 ngày sau đậu). Nghe tiếng ộp khi gõ"
+            }
+        ],
+        "tips": [
+            "Cần đất sâu, giàu dinh dưỡng, pH 5.5-6.5",
+            "Tưới đủ nước nhưng tránh ngập úng",
+            "Tỉa hoa và tỉa quả để quả to, chất lượng cao",
+            "Cây cho trái từ năm thứ 5-7, tuổi thọ 50-80 năm"
+        ],
+        "pests": [
+            {
+                "name": "Sâu đục thân",
+                "signs": "Thân có lỗ tròn, mùn cưa, cây héo lá vàng",
+                "solution": "Dùng dây thép móc sâu, bơm thuốc diệt côn trùng vào lỗ"
+            }
+        ],
+        "harvest": {
+            "signs": "Quả to đủ size, gai từ xanh chuyển vàng nhạt, nghe tiếng ộp khi gõ",
+            "method": "Hái bằng cần câu dài có dao cưa. Hái cả cuống, để chín tự nhiên",
+            "grading": [
+                "Loại A: Quả >2kg, đều đặn, vỏ đẹp",
+                "Loại B: Quả 1.5-2kg, hình dáng bình thường"
+            ],
+            "storage": "Để nơi mát, thông thoáng. Chín sau 2-5 ngày tùy độ già"
+        }
+    }
+}

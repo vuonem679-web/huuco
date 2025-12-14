@@ -1,0 +1,92 @@
+{
+    "pesticides": [
+        {
+            "name": "Nước ép tỏi ớt",
+            "icon": "🧄",
+            "use": "Diệt sâu ăn lá",
+            "ingredients": [
+                "Tỏi tây: 100g (khoảng 10-15 tép)",
+                "Ớt hiểm: 100g (10-15 quả)",
+                "Gừng tươi: 100g (1 khúc nhỏ)",
+                "Rượu trắng: 300ml (45 độ)",
+                "Xà phòng gốc dầu: 5ml"
+            ],
+            "steps": [
+                "Bước 1: Giã nhuyễn tỏi, ớt, gừng",
+                "Bước 2: Ngâm trong rượu 7-15 ngày, lắc đều hàng ngày",
+                "Bước 3: Lọc lấy nước cốt, bảo quản nơi mát",
+                "Bước 4: Pha 50ml/10l nước + xà phòng, phun chiều mát"
+            ],
+            "frequency": "5-7 ngày/lần, ngừng 7 ngày trước thu hoạch"
+        },
+        {
+            "name": "Dầu Neem",
+            "icon": "🌿",
+            "use": "Trừ sâu tự nhiên",
+            "ingredients": [
+                "Dầu Neem: 10-20ml",
+                "Nước: 10 lít",
+                "Xà phòng: vài giọt"
+            ],
+            "steps": [
+                "Bước 1: Pha dầu Neem với nước",
+                "Bước 2: Thêm vài giọt xà phòng để nhũ hóa",
+                "Bước 3: Khuấy đều",
+                "Bước 4: Phun chiều mát, có thể dùng trước thu hoạch"
+            ],
+            "frequency": "7-10 ngày/lần"
+        }
+    ],
+    "fertilizers": [
+        {
+            "name": "FAA (Fish Amino Acid)",
+            "icon": "🐟",
+            "use": "Đạm cá - Bón lá",
+            "ingredients": [
+                "Cá tươi (loại nhỏ): 1kg",
+                "Đường nâu/mật: 1kg",
+                "Nước vo gạo: 3 lít"
+            ],
+            "steps": [
+                "Bước 1: Cắt nhỏ cá, trộn với đường",
+                "Bước 2: Cho vào bình, đổ nước vo gạo",
+                "Bước 3: Đậy kín, để lên men 3 tháng",
+                "Bước 4: Lọc lấy nước, pha 1:500-1000 để phun lá"
+            ],
+            "frequency": "7-10 ngày/lần"
+        },
+        {
+            "name": "BAA (Banana Amino Acid)",
+            "icon": "🍌",
+            "use": "Đạm chuối - Bón lá (giàu Kali)",
+            "ingredients": [
+                "Thân chuối già: 5kg",
+                "Đường nâu: 1kg",
+                "Nước: 5 lít"
+            ],
+            "steps": [
+                "Bước 1: Băm nhỏ thân chuối",
+                "Bước 2: Trộn với đường, ủ 2 giờ",
+                "Bước 3: Cho vào bình, thêm nước",
+                "Bước 4: Lên men 1-2 tháng, pha 1:500 phun lá"
+            ],
+            "frequency": "7-10 ngày/lần, tốt cho giai đoạn ra hoa đậu quả"
+        },
+        {
+            "name": "Canxi hòa tan (WSCa)",
+            "icon": "🥚",
+            "use": "Bổ sung canxi",
+            "ingredients": [
+                "Vỏ trứng: 500g",
+                "Giấm gạo: 1 lít"
+            ],
+            "steps": [
+                "Bước 1: Rửa sạch vỏ trứng, phơi khô",
+                "Bước 2: Ngâm trong giấm 7-10 ngày",
+                "Bước 3: Vỏ trứng tan hết, lọc lấy nước",
+                "Bước 4: Pha 1:500-1000 phun lá"
+            ],
+            "frequency": "7-10 ngày/lần, quan trọng cho quả"
+        }
+    ]
+}

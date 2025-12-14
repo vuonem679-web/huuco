@@ -1,0 +1,91 @@
+{
+    "soilPreparation": {
+        "title": "Chuẩn bị đất và phân bón hữu cơ",
+        "sections": [
+            {
+                "title": "Kiểm tra pH đất",
+                "icon": "🧪",
+                "items": [
+                    "Đất chua (pH < 6.0): Bón vôi bột 100-200kg/1000m²",
+                    "Đất trung tính (pH 6.0-7.0): Lý tưởng cho hầu hết cây trồng",
+                    "Đất kiềm (pH > 7.0): Bón lưu huỳnh hoặc phân chua",
+                    "Dùng bộ test pH hoặc giấy quỳ tím để đo"
+                ]
+            },
+            {
+                "title": "Phân hữu cơ cơ bản",
+                "icon": "🌿",
+                "items": [
+                    "Phân chuồng hoai mục: 2-5 tấn/1000m²/năm",
+                    "Phân trùn quế: Giàu dinh dưỡng, 500kg-1 tấn/1000m²",
+                    "Tro trấu: Cung cấp kali, cải tạo đất",
+                    "Phân xanh: Trồng đậu xanh, cỏ keo rồi vùi"
+                ]
+            }
+        ]
+    },
+    "principles": {
+        "title": "Nguyên tắc nông nghiệp hữu cơ",
+        "general": [
+            "Đất là nền tảng: Đầu tư cải tạo đất, bón phân hữu cơ thường xuyên",
+            "Phòng bệnh từ sớm: Khỏe cây từ gốc, không chờ bệnh nặng mới xử lý",
+            "Quan sát thường xuyên: Kiểm tra cây hàng ngày, phát hiện sớm bất thường",
+            "Đa dạng sinh học: Trồng xen canh, thu hút côn trùng có ích",
+            "Tưới nước đúng cách: Đủ ẩm nhưng thoát nước tốt, tránh úng",
+            "Kiên nhẫn: Nông nghiệp hữu cơ cần thời gian để có kết quả tốt"
+        ],
+        "fiveNos": "Không thuốc diệt cỏ; không thuốc trừ sâu; không chất bảo quản; không chất kích thích, tăng trưởng; không dư lượng hóa chất độc hại."
+    },
+    "fertilizers": [
+        {
+            "name": "Phân chuồng hoai mục",
+            "icon": "🐄",
+            "composition": "N: 0.5-1%, P: 0.3-0.5%, K: 0.5-1%",
+            "dosage": "2-5 tấn/1000m²/năm",
+            "benefits": "Cải thiện cấu trúc đất, tăng độ tơi xốp",
+            "note": "Phải ủ hoai mục 3-6 tháng trước dùng"
+        },
+        {
+            "name": "Phân trùn quế",
+            "icon": "🪱",
+            "composition": "N: 1-3%, P: 1-2%, K: 1-2%",
+            "dosage": "500kg-1 tấn/1000m²",
+            "benefits": "Giàu dinh dưỡng, dễ hấp thụ",
+            "note": "Chứa enzyme và axit humic cao"
+        },
+        {
+            "name": "Phân xanh",
+            "icon": "🌾",
+            "composition": "Đậu xanh, cỏ keo, rau muống",
+            "dosage": "Trồng → cắt → vùi xuống đất",
+            "benefits": "Tăng nitơ tự nhiên",
+            "note": "Vùi trước trồng 15-30 ngày"
+        }
+    ],
+    "microorganisms": [
+        {
+            "name": "Trichoderma",
+            "icon": "🍄",
+            "type": "Nấm đối kháng",
+            "use": "Tiêu diệt nấm bệnh, thối rễ",
+            "dosage": "10-20g/10l nước",
+            "application": "Ủ phân, xử lý đất, phun gốc"
+        },
+        {
+            "name": "Bacillus thuringiensis (Bt)",
+            "icon": "🦠",
+            "type": "Vi khuẩn diệt sâu",
+            "use": "Diệt ấu trùng sâu ăn lá",
+            "dosage": "15-20g/10l nước",
+            "application": "Không độc với người, vật nuôi"
+        },
+        {
+            "name": "EM (Effective Microorganisms)",
+            "icon": "🧪",
+            "type": "Hỗn hợp vi sinh vật",
+            "use": "Ủ phân, cải tạo đất",
+            "dosage": "20-50ml/10l nước",
+            "application": "Lactic, Bacillus, nấm men"
+        }
+    ]
+}
