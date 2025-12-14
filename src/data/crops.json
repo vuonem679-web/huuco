@@ -459,7 +459,7 @@
     },
     "sau-rieng": {
         "name": "Sầu riêng",
-        "icon": "🥭",
+        "icon": "😒",
         "season": "Trồng tháng 5-7 (đầu mùa mưa)",
         "bestMonths": [
             5,
@@ -533,6 +533,85 @@
                 "Loại B: Quả 1.5-2kg, hình dáng bình thường"
             ],
             "storage": "Để nơi mát, thông thoáng. Chín sau 2-5 ngày tùy độ già"
+        }
+    },
+    "hoa-huong-duong": {
+        "name": "Hoa hướng dương",
+        "icon": "🌻",
+        "season": "Trồng tháng 10-2 (mùa khô có nắng)",
+        "bestMonths": [
+            10,
+            11,
+            12,
+            1,
+            2
+        ],
+        "seasonReason": "Cần nhiều nắng, ít mưa để ra hoa đẹp và hạt chắc",
+        "duration": 100,
+        "activities": [
+            {
+                "day": 0,
+                "type": "giong",
+                "title": "Xuống giống",
+                "desc": "Gieo thẳng 2-3 hạt/hốc sâu 3-4cm. Khoảng cách 50x60cm. Chọn giống hạt to, đầy đặn"
+            },
+            {
+                "day": 7,
+                "type": "care",
+                "title": "Tỉa cây",
+                "desc": "Khi cây 2 lá thật, chỉ để 1 cây khỏe nhất/hốc. Tưới đều đặn"
+            },
+            {
+                "day": 20,
+                "type": "fertilizer",
+                "title": "Bón thúc lần 1",
+                "desc": "NPK (16-16-8) 200g/m² + phân chuồng. Bón cách gốc 15cm, vun đất"
+            },
+            {
+                "day": 40,
+                "type": "fertilizer",
+                "title": "Bón thúc lần 2",
+                "desc": "Tăng kali: NPK (16-16-24) 150g/m². Giai đoạn ra nụ hoa"
+            },
+            {
+                "day": 60,
+                "type": "care",
+                "title": "Chăm sóc hoa",
+                "desc": "Ra hoa. Tưới đều, tránh úng. Chống đỡ thân nếu cần"
+            },
+            {
+                "day": 100,
+                "type": "harvest",
+                "title": "Thu hoạch hạt",
+                "desc": "Mặt sau đĩa hoa chuyển vàng nâu, hạt cứng. Cắt cả đĩa hoa, phơi khô"
+            }
+        ],
+        "tips": [
+            "Cần nhiều ánh sáng mặt trời (8-10h/ngày)",
+            "Đất tơi xốp, thoát nước tốt, pH 6.0-7.5",
+            "Tưới đều đặn nhưng không úng nước",
+            "Có thể trồng làm cảnh hoặc lấy hạt"
+        ],
+        "pests": [
+            {
+                "name": "Rệp vàng",
+                "signs": "Lá có đốm vàng, héo, rệp tập trung ở mặt dưới lá",
+                "solution": "Xịt nước ép tỏi ớt (100g/10l) hoặc dầu Neem (1:100). Lặp lại 5 ngày/lần"
+            },
+            {
+                "name": "Chim ăn hạt",
+                "signs": "Hạt bị mổ, đĩa hoa bị hư hại",
+                "solution": "Bao lưới hoặc túi vải khi hạt bắt đầu chín"
+            }
+        ],
+        "harvest": {
+            "signs": "Mặt sau đĩa hoa chuyển vàng nâu, cánh hoa khô rụng, hạt cứng đen",
+            "method": "Cắt đĩa hoa cùng 20-30cm thân. Phơi nắng 5-7 ngày, lấy hạt",
+            "grading": [
+                "Loại A: Hạt đầy đặn, đen bóng, đường kính >8mm",
+                "Loại B: Hạt nhỏ hơn, màu nhạt hơn"
+            ],
+            "storage": "Bảo quản hạt khô nơi thoáng mát, tránh ẩm. Dùng được 6-12 tháng"
         }
     }
 }
