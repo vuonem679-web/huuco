@@ -17,6 +17,7 @@
                 "Bước 3: Lọc lấy nước cốt, bảo quản nơi mát",
                 "Bước 4: Pha 50ml/10l nước + xà phòng, phun chiều mát"
             ],
+            "dosage": "Pha 1:200 (50ml/10l nước)",
             "frequency": "5-7 ngày/lần, ngừng 7 ngày trước thu hoạch",
             "benefits": "Diệt sâu ăn lá, xua đuổi côn trùng, kháng nấm vi khuẩn"
         },
@@ -36,6 +37,7 @@
                 "Bước 4: Pha 100ml dung dịch + 10l nước + xà phòng",
                 "Bước 5: Dùng ngay, không để qua đêm"
             ],
+            "dosage": "Pha 1:100 (100ml/10l nước)",
             "frequency": "7-10 ngày/lần, an toàn đến ngày thu hoạch",
             "benefits": "An toàn, không độc hại, phân hủy nhanh trong tự nhiên. Hoạt chất Azadirachtin - chất trừ sâu tự nhiên"
         }
@@ -135,7 +137,8 @@
                 "Bước 3: Kiểm tra pH 3.5-4.5 (chua nhẹ)",
                 "Bước 4: Sử dụng hoặc bảo quản nơi mát"
             ],
-            "frequency": "Ủ phân: 50ml/10kg, Tưới gốc: 20-50ml/10l, 1-2 tuần/lần",
+            "dosage": "Ủ phân: 50ml/10kg, Tưới gốc: 20-50ml/10l, Phun lá: 30ml/10l",
+            "frequency": "1-2 tuần/lần",
             "benefits": "Cải tạo đất, phân hủy chất hữu cơ nhanh, tăng hấp thu dinh dưỡng, ức chế nấm bệnh, khử mùi hôi"
         }
     ],

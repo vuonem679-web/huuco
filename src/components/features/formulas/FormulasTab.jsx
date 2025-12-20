@@ -71,6 +71,14 @@ function FormulaCard({ formula, type }) {
             </div>
 
             {/* Frequency or Benefits */}
+            {formula.dosage && (
+                <div className="mt-3 md:mt-4 p-2 md:p-3 bg-white rounded">
+                    <p className="text-xs md:text-sm">
+                        <strong className={titleColor}>Tỉ lệ pha:</strong> {formula.dosage}
+                    </p>
+                </div>
+            )}
+
             {formula.frequency && (
                 <div className="mt-3 md:mt-4 p-2 md:p-3 bg-white rounded">
                     <p className="text-xs md:text-sm">
